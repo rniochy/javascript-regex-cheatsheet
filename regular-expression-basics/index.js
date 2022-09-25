@@ -28,3 +28,23 @@ Use when the expression may change or the expression is user generated. */
   let result =  pattern.exec(str);
   const {index, input, groups} = result;
   console.log(result[0], index, input, groups, result);
+
+  // Bonus of basic concept 
+  /* In Regular Expression (RegEx) we can match using*/
+   /**
+    *  . - dot Any character except new line 
+    *  a - The character a
+    *  ab - The character ab 
+    *  a|b - a or b 
+    *  a* - 0 or more a's
+    * \ - Escapes a special character 
+    */
+     const dot = /./.test("rodrigoLimarniochy");
+     const character = /R/.test("R");
+     const moreCharacter = /Ro/.test("Ro");
+     const characterORother = /R|r/.test("r");  // Change to R 
+     const zeroOrMoreCharacter = /r*/.test("o");
+     const specialCharacterEscape = /\(/.test('(');
+     console.log(dot, character, moreCharacter, characterORother,zeroOrMoreCharacter, specialCharacterEscape);  
+    
+
