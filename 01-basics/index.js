@@ -20,10 +20,9 @@ Use when the expression may change or the expression is user generated. */
  // .exec() - returns an array of captures, or null if there was no match.
  /*
       match[0] - is the full match string.
-      match[1]  - match.index - location of the match.
-      match[2] - match.input - value input 
-      match[3] is the text corresponding to the first captured group. match[n] would be the value of the nth captured
-      group.
+      match[1]  - is the text corresponding to the first captured group. match[n] would be the value of the nth captured group.
+      match.input - value input 
+      match.index - index where was match
  */
   let result =  pattern.exec(str);
   const {index, input, groups} = result;

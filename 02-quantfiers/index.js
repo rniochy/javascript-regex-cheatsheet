@@ -16,7 +16,10 @@
    const zeroOrMore = /g*/.test("RRRRRRRRRRRRR");
    const zeroOrOne = /R?/.test("");
    const oneOrMore = /R+/.test("RR")
-   const exactlySix = /R{2}/.test("RRRRRRRR");
-   const betweenThreeAndSix = /R{2,6}/.test("RRR");
-   const SixOrMore = /R{6,}/.test("RRRRRRRRRRRRRRRRR");
+   const exactlySix = /R{2}/.test("RRR");
+   const betweenThreeAndSix = /(R{2,6})/.test("RRRRRRR");
+   const SixOrMore = /R{6,}/.test("RR");
     console.log(zeroOrMore, oneOrMore, exactlySix, betweenThreeAndSix,SixOrMore);
+
+    const result = new RegExp('[^(\"\")+]');
+    console.table(result.exec('""MMMMMw'));
