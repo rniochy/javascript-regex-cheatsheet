@@ -44,7 +44,7 @@ Use when the expression may change or the expression is user generated. */
      const dot = /./.test("rodrigoLima@rniochy");
      const character = /R/.test("R");
      const moreCharacter = /Ro/.test("Ro");
-     const characterORother = /R|r/.test("r");  // Change to R 
+     const characterORother = /R|r/.test("r");  // Change to R  // is casesensitive. 
      const zeroOrMoreCharacter = /r*/.test("o");
      const specialCharacterEscape = /\(/.test('(');
      console.log(dot, character, moreCharacter, characterORother,zeroOrMoreCharacter, specialCharacterEscape);  
