@@ -12,5 +12,8 @@
       y - Finds all consecutive/adjacent matches.
 */
 
-   const global = /(Rodrigo)/.exec("Rodrigo");
-   console.log(global);
+    const re = /(o){1}/g;
+    let result
+    while ((result = re.exec('Rodrigo')) !== null) {
+        console.log("found '" + result[0] + "', next exec starts at index '" + re.lastIndex + "'");
+        }
