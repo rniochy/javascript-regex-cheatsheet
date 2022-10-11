@@ -11,3 +11,6 @@
     of simply the beginning and end of the entire string.
       y - Finds all consecutive/adjacent matches.
 */
+
+   const global = /(Rodrigo)/.exec("Rodrigo");
+   console.log(global);
