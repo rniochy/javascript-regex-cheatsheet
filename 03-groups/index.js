@@ -7,5 +7,5 @@
      * \Y Match the Y'th Captured Group
  */
 
-    const captureGroup = /(?:(Ro)drig(o)$)/m.exec("Lima Rodrigo");
+    const captureGroup = /(?:(Ro)(\w+)(o)$)/m.exec("Lima Rodrigo"); ///(?:(Ro)drig(o)$)/m.test("Lima Rodrigo");
     console.log(captureGroup);
