@@ -19,10 +19,10 @@ Use when the expression may change or the expression is user generated. */
 
  // .exec() - returns an array of captures, or null if there was no match.
  /*
-      match[0] - is the full match string.
-      match[1]  - is the text corresponding to the first captured group. match[n] would be the value of the nth captured group.
-      match.input - value input 
-      match.index - index where was match
+      match.index  the (zero-based) location of the match.
+      match[0] is the full match string.
+      match[1] is the text corresponding to the first captured group. match[n] would be the value of the nth captured
+      group.
  */
   let result =  pattern.exec(str);
   const {index, input, groups} = result;
@@ -33,7 +33,7 @@ Use when the expression may change or the expression is user generated. */
    *   In Regular Expression (RegEx) we can match using:
   */
    /**
-    *  . - dot Any character except new line 
+    *  . (dot) - Any character except new line 
     *  a - The character a
     *  ab - The character ab 
     *  a|b - a or b 
