@@ -17,3 +17,6 @@
     while ((result = re.exec('Rodrigo')) !== null) {
         console.log("found '" + result[0] + "', next exec starts at index '" + re.lastIndex + "'");
         }
+
+    const ignoreCase = /(RodriGo)/i.test("rodrigo");
+    console.log(ignoreCase);
