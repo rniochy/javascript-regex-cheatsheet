@@ -1,6 +1,14 @@
 //  Regular expressions Groups
 
 /**
+ * A part of a pattern can be enclosed in parentheses (...). This is called a “capturing group”.
+
+That has two effects:
+
+It allows to get a part of the match as a separate item in the result array.
+If we put a quantifier after the parentheses, it applies to the parentheses as a whole. */ 
+
+/**
      *  We use the Group in RegEx to group some patterns 
      * (...) - Capturing Group
      * (?:....) - Non-Capturing Group, Using the form (?:pattern), these work in a similar way to capture groups, except they do not store the contents
