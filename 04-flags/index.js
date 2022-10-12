@@ -13,13 +13,21 @@
       y - Finds all consecutive/adjacent matches.
 */
 
-    const re = /(o){1}/g;
+    const re = /o/g;
     let result
-    while ((result = re.exec('Rodrigo')) !== null) {
+    while ((result = re.exec('Rodrigo Lima')) !== null) {
         console.log("found '" + result[0] + "', next exec starts at index '" + re.lastIndex + "'");
         }
 
     const ignoreCase = /(RodriGo)/i.test("rodrigo");
 
-    const multLine = /(Lima)/.test("Lioma\nLikma LikmaLikmaLikmaLikmaLikma Likma LikmaLikmaLikma \n\r\nLima LikmaLikmaLikma");
-    console.log(ignoreCase, multLine);
+    const multLine = /(Lima)/gm.test("Lioma\nLikma LikmaLikmaLikmaLikmaLikma Likma LikmaLikmaLikma \n\r\nLima LikmaLikmaLikma");
+
+    // We can use the attribute 'lastIndex' to get or set position to  match 
+
+    const str = "Rodrigo Lima";
+    const regex = /Lima/g;
+    regex.lastIndex = 7;
+    const sticky = regex.exec(str);
+
+    console.log(ignoreCase, multLine,multLine, sticky);
