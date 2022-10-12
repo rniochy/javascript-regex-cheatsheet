@@ -22,6 +22,10 @@ If we put a quantifier after the parentheses, it applies to the parentheses as a
     console.log(captureGroup, noncaptureGroup);
 
     // Named Groups
+    /**
+          Remembering groups by their numbers is hard. For simple patterns it’s doable, but for more complex ones counting parentheses is inconvenient. We have a much better option: give names to parentheses.
+        That’s done by putting ?<name> immediately after the opening paren.
+     */
     let dateRegexp = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/;
     let str = "2019-04-30";
 
