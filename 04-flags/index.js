@@ -21,5 +21,5 @@
 
     const ignoreCase = /(RodriGo)/i.test("rodrigo");
 
-    const multLine = /(Lima)$/.test("Lioma\nLikma\n\r\nLima");
+    const multLine = /(Lima)/.test("Lioma\nLikma LikmaLikmaLikmaLikmaLikma Likma LikmaLikmaLikma \n\r\nLima LikmaLikmaLikma");
     console.log(ignoreCase, multLine);
