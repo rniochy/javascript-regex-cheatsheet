@@ -20,3 +20,9 @@ If we put a quantifier after the parentheses, it applies to the parentheses as a
 
     const noncaptureGroup = /(?:(Ro)drig(o)$)/.exec("Lima Rodrigo"); 
     console.log(captureGroup, noncaptureGroup);
+
+    // Named Groups
+    let dateRegexp = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/;
+    let str = "2019-04-30";
+
+    let groups = str.match(dateRegexp).groups;
