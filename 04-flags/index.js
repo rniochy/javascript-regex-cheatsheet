@@ -21,13 +21,13 @@
 
     const ignoreCase = /(RodriGo)/i.test("rodrigo");
 
-    const multLine = /(Lima)/gm.test("Lioma\nLikma LikmaLikmaLikmaLikmaLikma Likma LikmaLikmaLikma \n\r\nLima LikmaLikmaLikma");
+    const multLine = /\d+/mg.test("\n\n11");
 
     // We can use the attribute 'lastIndex' to get or set position to  match 
 
     const str = "Rodrigo Lima";
-    const regex = /Lima/g;
-    regex.lastIndex = 7;
+    const regex = /\w+/y;
+    regex.lastIndex = 8;
     const sticky = regex.exec(str);
 
-    console.log(ignoreCase, multLine,multLine, sticky);
+    console.log(ignoreCase, multLine, sticky);
