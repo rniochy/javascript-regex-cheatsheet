@@ -1,4 +1,5 @@
 //  Regular expressions  Creating a RegExp Object */
+// Regular expressions are patterns that provide a powerful way to search and replace in text.
 
 // Standard Creation - 
 /* It is recommended to use this form only when creating regex from dynamic variables.
