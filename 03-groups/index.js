@@ -42,6 +42,7 @@ If we put a quantifier after the parentheses, it applies to the parentheses as a
     const str = "2019-04-30";
 
     const groups = str.match(dateRegexp).groups;
+    console.log(groups)
 
 
 //     let regexp = /^[0-9a-f]{2}(:[0-9a-f]{2}){5}$/i;
