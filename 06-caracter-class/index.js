@@ -3,7 +3,7 @@
 */
 
 /**
- *  [ab-d]  - One character of: a,b,c,d
+ *  [ab-d]  - One character of: a,b,c,d.  ex: [a-zA-Z], [0-9], [a-z0-9]
  *  [^ab-d] - One character except: a,b,c,d 
  *  [\b]    - backspace character
  *  \d  - One digit
