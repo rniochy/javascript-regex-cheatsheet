@@ -3,9 +3,9 @@
 */
 
 /**
- *  [ab-d]
- *  [^ab-d]
- *  [\b]
+ *  [ab-d]  - One character of: a,b,c,d
+ *  [^ab-d] - One character except: a,b,c,d 
+ *  [\b]    - backspace character
  *  \d  - One digit
  *  \D  - One non-digit
  *  \s  - One whitespace
