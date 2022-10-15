@@ -13,3 +13,7 @@
  *  \w  - One word character
  *  \W  - One  non-word character
  */
+
+ const OnecharacterOf = /[ab-d]/.exec("doe");
+ const nonOnecharacterOf = /[^ab-d]/.exec("john");
+ console.log(OnecharacterOf, nonOnecharacterOf);
