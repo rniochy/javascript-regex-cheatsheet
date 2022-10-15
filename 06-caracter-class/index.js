@@ -14,6 +14,9 @@
  *  \W  - One  non-word character
  */
 
- const OnecharacterOf = /[ab-d]/.exec("doe");
+ const backspace = /[\b]/.exec("\b");
+ const oneDigit = /[\d]/.exec("abcdefgh7ijk");
+ const nonOneDigit = /[\D]/.exec("abcdefgh7ijk");
+ const onecharacterOf = /[ab-d]/.exec("doe");
  const nonOnecharacterOf = /[^ab-d]/.exec("john");
- console.log(OnecharacterOf, nonOnecharacterOf);
+ console.log(onecharacterOf, nonOnecharacterOf, backspace,oneDigit, nonOneDigit);
