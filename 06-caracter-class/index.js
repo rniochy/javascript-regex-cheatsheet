@@ -15,8 +15,24 @@
  */
 
  const backspace = /[\b]/.exec("\b");
+
  const oneDigit = /[\d]/.exec("abcdefgh7ijk");
+
  const nonOneDigit = /[\D]/.exec("abcdefgh7ijk");
+
+ const oneWordCharacter = /[\w]/.exec("hello!");
+ 
+ const noneOneWordCharacter = /[\W]/.exec("hello!");
+
+ const oneWhitespace = /[\s]/.exec(" ");
+
+ const nonOneWhitespace = /[\S]/.exec("Rodrigo");
+
  const onecharacterOf = /[ab-d]/.exec("doe");
+
  const nonOnecharacterOf = /[^ab-d]/.exec("john");
- console.log(onecharacterOf, nonOnecharacterOf, backspace,oneDigit, nonOneDigit);
+
+ console.log(onecharacterOf, nonOnecharacterOf, backspace,oneDigit, 
+            nonOneDigit,oneWhitespace,nonOneWhitespace, oneWordCharacter,
+            noneOneWordCharacter
+            );
