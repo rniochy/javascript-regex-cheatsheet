@@ -32,7 +32,8 @@
 
  const nonOnecharacterOf = /[^ab-d]/.exec("john");
 
- console.log(onecharacterOf, nonOnecharacterOf, backspace,oneDigit, 
-            nonOneDigit,oneWhitespace,nonOneWhitespace, oneWordCharacter,
-            noneOneWordCharacter
-            );
+ console.log(
+    onecharacterOf, nonOnecharacterOf, backspace,
+    oneDigit, nonOneDigit,oneWhitespace,
+    nonOneWhitespace, oneWordCharacter,noneOneWordCharacter
+    );
