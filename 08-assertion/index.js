@@ -38,5 +38,6 @@ console.table(negativeLookhead);
 */
  const lookbehind = /(?<=\$)\d+/.exec("1 turkey costs $30");
  const negativeLookbehind = /(?<!\$)\d+/.exec("1 turkey costs $30");
+ 
  console.table(lookbehind);
  console.table(negativeLookbehind);
