@@ -18,7 +18,8 @@ const NonWordBoundary = /\BJohn\B/.exec("John Doe");
  * */ 
 const wordBoundaryWithDigits = /\b\d\d\b/g.exec("1 23 456 78");
 
-const lookhead = /./.exec();
+const lookhead = /\d+(?=€)/.exec("1 turkey costs 30€");
+const negativeLookhead = /\d+(?!€)/.exec("1 turkey costs 30€");
 
 
 console.table(startOfString);
@@ -26,3 +27,5 @@ console.table(endOfString);
 console.table(wordBoundary);
 console.table(wordBoundaryWithDigits);
 console.table(NonWordBoundary);
+console.table(lookhead);
+console.table(negativeLookhead);
