@@ -29,3 +29,14 @@ console.table(wordBoundaryWithDigits);
 console.table(NonWordBoundary);
 console.table(lookhead);
 console.table(negativeLookhead);
+
+// BONUS ..
+/**
+ *  (?<= ...) Lookbehind
+ * Lookbehind is similar, but it looks behind. That is, it allows to match a pattern only if there’s something before it.
+ * 
+*/
+ const lookbehind = /(?<=\$)\d+/.exec("1 turkey costs $30");
+ const negativeLookbehind = /(?<!\$)\d+/.exec("1 turkey costs $30");
+ console.table(lookbehind);
+ console.table(negativeLookbehind);
