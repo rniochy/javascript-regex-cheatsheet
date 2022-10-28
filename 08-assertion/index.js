@@ -38,6 +38,13 @@ console.table(negativeLookhead);
 */
  const lookbehind = /(?<=\$)\d+/.exec("1 turkey costs $30");
  const negativeLookbehind = /(?<!\$)\d+/.exec("1 turkey costs $30");
- 
+
+ /***
+  *  Capturing groups
+  * Generally, the contents inside lookaround parentheses does not become a part of the result.
+  */
+  const captureGroupLookbehind = /(?<=(\$|£))\d+/.exec("1 turkey costs $30");
+
  console.table(lookbehind);
  console.table(negativeLookbehind);
+ console.table(captureGroupLookbehind);
