@@ -18,6 +18,7 @@ const NonWordBoundary = /\BJohn\B/.exec("John Doe");
  * */ 
 const wordBoundaryWithDigits = /\b\d\d\b/g.exec("1 23 456 78");
 
+const lookhead = /./.exec();
 
 
 console.table(startOfString);
